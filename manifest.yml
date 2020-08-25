@@ -1,0 +1,9 @@
+---
+applications:
+  - name: fake-rest-server
+    path: ./target/fake-rest-server-0.0.1-SNAPSHOT.jar
+    memory: 1Gcf set-env cloud-lens-api
+    instances: 1
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+API_APPLICATION_VERSION:
